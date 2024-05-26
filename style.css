@@ -1,9 +1,9 @@
-
 /* CSS general */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inconsolata', monospace; /* Aplica la fuente Inconsolata a todos los elementos */
 }
 
 /* CSS de encabezado */
@@ -43,11 +43,11 @@
 /* Estilos de la barra lateral izquierda */
 
 .sidebar {
-    position: static;
+    position: fixed;
     left: 0;
     top: 70px; /* Ajusta esto para que coincida con la altura del header */
-    width: 200px; /* Ajusta el ancho según sea necesario */
-    height: calc(30% - 50px); /* Ajusta para cubrir el resto de la altura */
+    width: 250px; /* Ajusta el ancho según sea necesario */
+    height: calc(100% - 70px); /* Ajusta para cubrir el resto de la altura */
     background-color: #ffffff; /* Ajusta el color de fondo según sea necesario */
     padding: 10px 0;
 }
@@ -55,42 +55,69 @@
 .sidebar nav ul {
     list-style-type: none;
     padding: 0;
+    margin-right: 30px;
+}
+
+
+.sidebar img{
+    margin-right: 10px;
+
 }
 
 .sidebar nav ul li {
     display: flex;
     align-items: center;
-    padding: 15px 20px; /* Ajusta el padding según sea necesario */
-    transition: background-color 0.3s ease, padding 0.2s ease; /* Transición suave para el cambio de color de fondo y tamaño */
+    padding: 15px; /* Ajusta el padding según sea necesario */
+    transition: background-color 0.3s ease, padding 0.2s ease; /* Transición suave para el cambio de padding */
     border-radius: 8px; /* Borde redondeado por defecto */
+    padding-right: 5px;
+    margin-left: 5px;
+    white-space: nowrap; /* Evita el salto de línea */
+    margin-bottom: 10px;
+
 }
 
-.sidebar nav ul li:hover {
-    background-color: #f0f0f0; /* Color de fondo al pasar el mouse */
+.sidebar nav ul li:hover, .sidebar nav ul li.active {
+    background-color: #f0f0f0; /* Color de fondo al pasar el mouse y en estado activo */
     padding: 8px 15px; /* Ajusta el tamaño del padding al pasar el mouse */
+    border-radius: 15px; /* Bordes redondeados al pasar el mouse */
 }
 
 .sidebar nav ul li:active {
     background-color: #ccc; /* Color de fondo al hacer clic */
     padding: 8px 15px; /* Ajusta el tamaño del padding al hacer clic */
-}
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreado al hacer clic */
+} 
 
 .sidebar nav ul li img {
     width: 20px;
     height: 20px;
-    margin-right: 10px; /* Ajusta el margen según sea necesario */
+}
+
+
+.sidebar a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit;        /* Mantiene el color del texto original */
+    display: flex;         /* Asegura que el enlace abarque tanto el texto como la imagen */
+    align-items: center;   /* Centra verticalmente la imagen y el texto */
 }
 
 /* Estilos de la barra lateral derecha */
-
 .sidebar-right {
-    position:relative;
     margin-left: 220px; /* Asegura que el contenido a la derecha esté alineado correctamente */
     padding: 30px;
+    font-size: 40px;
+    color: black;
+}
+
+.user-na{
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .greeting {
     display: flex;
+    align-items: flex-start; /* Alinea los elementos al inicio del contenedor flex */
     font-size: 18px;
     margin-bottom: 10px;
 }
@@ -99,89 +126,11 @@
     text-align: justify;
     padding-right: 5%;
     line-height: 1.6;
+    flex: 1; /* Permite que el párrafo ocupe todo el espacio disponible */
 }
 
-.imag-bienvenido{
+.imag-bienvenido {
     max-width: 50%; /* Ajusta el tamaño máximo de la imagen */
     height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 5%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
