@@ -134,3 +134,120 @@
     height: auto; /* Altura automática para mantener la proporción */
     border-radius: 5%;
 }
+
+.headerprin img {
+    width: 135px;
+}
+
+.login-container {
+    max-width: 600px;
+    margin: 50px auto;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: none;
+    border: none;
+    text-align: center;
+}
+
+.login-container h1 {
+    font-family: 'Ligconsolata', monospace;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 41.96px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.login-container h1 .highlight {
+    color: #FFBB0A;
+}
+
+.login-container label {
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+    width: calc(100% - 40px);
+    padding: 0;
+    margin-bottom: 5px;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    margin-left: 56px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 80%;
+    padding: 12px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-family: 'Inter', sans-serif;
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.login-button {
+    width: 20%;
+    margin: 0 auto;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.login-button:hover {
+    background-color:#FFBB0A;
+}
+
+.pcontainer{
+    font-size: 15px;
+    text-align: center;
+    color: black;
+    margin-top: 18px;
+    margin-bottom: 35px;
+}
+
+.register-text {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #727272;
+    font-family: 'Inter', sans-serif;
+}
+
+.register-link {
+    color:#434E76;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
+
+.obligatorio-icon {
+    width: 1em;
+    height: auto;
+    vertical-align: middle;
+}
