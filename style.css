@@ -31,7 +31,6 @@
 
 .user-icon {
     width: 30px;
-    padding-top: 10px;
     margin-right: 10px; /* Ajusta este valor según tu preferencia */
 }
 
@@ -43,7 +42,7 @@
 /* Estilos de la barra lateral izquierda */
 
 .sidebar {
-    position: fixed;
+    position:static;
     left: 0;
     top: 70px; /* Ajusta esto para que coincida con la altura del header */
     width: 250px; /* Ajusta el ancho según sea necesario */
@@ -104,6 +103,7 @@
 
 /* Estilos de la barra lateral derecha */
 .sidebar-right {
+    position: static;
     margin-left: 220px; /* Asegura que el contenido a la derecha esté alineado correctamente */
     padding: 30px;
     font-size: 40px;
@@ -134,3 +134,4 @@
     height: auto; /* Altura automática para mantener la proporción */
     border-radius: 5%;
 }
+
