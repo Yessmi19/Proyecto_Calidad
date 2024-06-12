@@ -12,19 +12,18 @@
     <div class="headerprin">
         <img src="Imagenes/Logoo.png" alt="Logo">
     </div>
-    </header>
     <div class="login-container">
         <h1>Bienvenido a N<span class="highlight">Day</span></h1>
         <p class="pcontainer">Complete sus datos para iniciar sesión en su cuenta</p>
-        <form>
+        <form action="login2.php" method="POST">
             <label for="username">Correo electrónico o nombre de usuario</label>
-            <input type="text" id="username" name="username" required>
+            <input type="text" id="username" name="email" required>
             <label for="password">Contraseña <img src="Imagenes/obligatorio.png" alt="required" class="obligatorio-icon"></label>
             <div class="password-container">
                 <input type="password" id="password" name="password" required>
             </div>          
-            <button type="submit" class="login-button">Iniciar</button>        
-            <p class="register-text">No tiene una cuenta? <a href="Registro.html" class="register-link">Registrar</a></p>
+            <button type="submit" name="logins" class="login-button">Iniciar</button>        
+            <p class="register-text">¿No tiene una cuenta? <a href="Registro.php" class="register-link" style="text-decoration: none;">Registrar</a></p>
         </form>
     </div>
 </body>

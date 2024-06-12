@@ -20,16 +20,16 @@
     <div class="sidebar">
         <nav>
             <ul>
-                <li><a href="Home.html"><img src="Imagenes/home+.png" alt="Icon 1"> Home</a></li>
-                <li><a href="Agendarcita.html"><img src="Imagenes/calendario.png" alt="Icon 2"> Agendar Cita</a></li>
+                <li><a href="Home.php"><img src="Imagenes/home+.png" alt="Icon 1"> Home</a></li>
+                <li><a href="Agendarcita.php"><img src="Imagenes/calendario.png" alt="Icon 2"> Agendar Cita</a></li>
                 <li><a href="Historial.html"><img src="Imagenes/historial.png" alt="Icon 3"> Historial de citas</a></li>
                 <li><a href=""><img src="Imagenes/Servicios1.png" alt="Icon 4"> Servicios</a></li>
                 <li><a href=""><img src="Imagenes/especialistas.png" alt="Icon 5"> Especialistas</a></li>
                 <li><a href=""><img src="Imagenes/contacto.png" alt="Icon 6"> Contacto</a></li>
             </ul>
-            <ul style="padding-top: 80px;">
+            <ul style="padding-top: 50px;">
                 <li><a href=""><img src="Imagenes/confi.png" alt="Icon 7">Configuración</a></li>
-                <li><a href="Login.html" id="logout-link"><img src="Imagenes/salida.png" alt="Icon 8">Salida</a></li>
+                <li><a href="Login.php" id="logout-link"><img src="Imagenes/salida.png" alt="Icon 8">Salida</a></li>
             </ul>
         </nav>
     </div>
@@ -38,7 +38,7 @@
         <span class="user-na">Nombre del usuario</span>
         <div class="greeting">
             <div class="text-container">
-                <p class="bienvenido">¡Bienvenido al Consultorio Éxito Real! Somos una clínica dedicada a proporcionar una amplia gama de servicios de atención psicológica y psiquiátrica. Nuestro enfoque integral y personalizado garantiza que cada cliente reciba el apoyo necesario para mejorar su bienestar mental y emocional. Con un equipo altamente capacitado y comprometido, ofrecemos un entorno seguro y acogedor donde los pacientes pueden buscar ayuda profesional y trabajar hacia resultados positivos y duraderos.
+                <p class="bienvenido">¡Bienvenido al Consultorio Éxito Real! Somos una clínica dedicada a proporcionar una amplia gama de servicios de atención psicológica y psiquiátrica. Nuestro enfoque integral y personalizado garantiza que cada cliente reciba el apoyo necesario para mejorar su bienestar mental y emocional. Con un equipo altamente capacitado y comprometido, ofrecemos un entorno seguro y acogedor donde los pacientes pueden buscar ayuda profesional y trabajar hacia resultados positivos y duraderos.</p>
             </div>
             <img class="imag-bienvenido" src="Imagenes/imageHome.jpg" alt="Imagen de bienvenida">
         </div>
@@ -53,99 +53,29 @@
         });
 
         document.addEventListener('DOMContentLoaded', function () {
-    // Obtener la URL actual
-    const currentUrl = window.location.pathname.split('/').pop();
+            // Obtener la URL actual
+            const currentUrl = window.location.pathname.split('/').pop();
 
-    // Seleccionar todos los enlaces de la barra lateral
-    const menuItems = document.querySelectorAll('.sidebar nav ul li a');
+            // Seleccionar todos los enlaces de la barra lateral
+            const menuItems = document.querySelectorAll('.sidebar nav ul li a');
 
-    menuItems.forEach(link => {
-        // Comprobar si el enlace coincide con la URL actual
-        if (link.getAttribute('href') === currentUrl) {
-            // Añadir la clase 'active' al elemento padre del enlace coincidente
-            link.parentNode.classList.add('active');
-        }
+            menuItems.forEach(link => {
+                // Comprobar si el enlace coincide con la URL actual
+                if (link.getAttribute('href') === currentUrl) {
+                    // Añadir la clase 'active' al elemento padre del enlace coincidente
+                    link.parentNode.classList.add('active');
+                }
 
-        // Añadir evento click a cada enlace
-        link.addEventListener('click', function (event) {
-            // Remover la clase 'active' de todos los elementos del menú
-            menuItems.forEach(link => link.parentNode.classList.remove('active'));
+                // Añadir evento click a cada enlace
+                link.addEventListener('click', function (event) {
+                    // Remover la clase 'active' de todos los elementos del menú
+                    menuItems.forEach(link => link.parentNode.classList.remove('active'));
 
-            // Añadir la clase 'active' al elemento padre del enlace clicado
-            this.parentNode.classList.add('active');
+                    // Añadir la clase 'active' al elemento padre del enlace clicado
+                    this.parentNode.classList.add('active');
+                });
+            });
         });
-    });
-});
-
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-     
-
-    
-
-
-           
